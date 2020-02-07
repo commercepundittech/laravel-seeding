@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Vrkansagara\\LaraOutPress\\": "src/"
+      "LaravelSeeding\\": "src/"
     },
     "files": [
       "src/helper.php"
@@ -40,10 +40,10 @@
         "dev-master": "develop"
       },
       "providers": [
-        "Vrkansagara\\LaraOutPress\\ServiceProvider"
+        "LaravelSeeding\\ServiceProvider"
       ],
       "aliases": {
-        "LaraOutPress": "Vrkansagara\\LaraOutPress\\Facade"
+        "LaraOutPress": "LaravelSeeding\\Facade"
       }
     }
   },
