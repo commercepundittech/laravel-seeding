@@ -17,14 +17,16 @@
     }
   ],
   "require": {
-    "php": ">=7.0"
+    "php": ">=7.0",
+    "illuminate/database": "^5.8|^6.0|^7.0",
+    "phpunit/phpunit": "^8.0"
   },
   "autoload": {
     "psr-4": {
-      "LaravelSeeding\\": "src/"
+      "CommercePunditTech\\LaravelSeeding\\": "src"
     },
     "files": [
-      "src/helper.php"
+      "src/helpers.php"
     ]
   },
   "support": {
@@ -37,18 +39,18 @@
   "extra": {
     "laravel": {
       "branch-alias": {
-        "dev-master": "develop"
+        "dev-master": "development"
       },
       "providers": [
-        "LaravelSeeding\\ServiceProvider"
+        "CommercePunditTech\\LaravelSeeding\\LaravelSeedingServiceProvider"
       ],
       "aliases": {
-        "LaraOutPress": "LaravelSeeding\\Facade"
+        "LaravelSeeding": "CommercePunditTech\\LaravelSeeding\\Facades"
       }
     }
   },
   "require-dev": {
-    "laravel/framework": "5.5.x"
+    "laravel/framework": "~5.5"
   },
   "scripts": {
     "post-autoload-dump": [
