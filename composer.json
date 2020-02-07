@@ -1,0 +1,58 @@
+{
+  "name": "commercepundittech/laravel-seeding",
+  "description": "Database seeder for Laravel",
+  "keywords": [
+    "laravel",
+    "database",
+    "seeder"
+  ],
+  "homepage": "https://www.commercepundit.com/",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vallabh Kansagara",
+      "email": "vallabh.kansagara@commercepundit.com",
+      "homepage": "https://vrkansagara.in/"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vrkansagara\\LaraOutPress\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "support": {
+    "email": "vallabh.kansagara@commercepundit.com",
+    "issues": "https://github.com/commercepundittech/laravel-seeding/issues",
+    "source": "https://github.com/commercepundittech/laravel-seeding"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "branch-alias": {
+        "dev-master": "develop"
+      },
+      "providers": [
+        "Vrkansagara\\LaraOutPress\\ServiceProvider"
+      ],
+      "aliases": {
+        "LaraOutPress": "Vrkansagara\\LaraOutPress\\Facade"
+      }
+    }
+  },
+  "require-dev": {
+    "laravel/framework": "5.5.x"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+    ]
+  }
+}
