@@ -1,27 +1,27 @@
 <?php
 
-namespace CommercePunditTech\LaravelSeeding;
+namespace CommercePunditTech\LaravelSeeding\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Composer;
 
-class DbSeederCommand extends GeneratorCommand
+class SeederMakeCommand extends GeneratorCommand
 {
     /**
      * The console command name.
      *
      * @var string
      */
-    protected $name = 'make:seeder';
+    protected $name = 'cpt:make:seeder';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new seeder in sequence way and their class';
+    protected $description = 'Create a new seer file By Commerce Pundit Tech.';
 
     /**
      * The type of class being generated.
@@ -129,6 +129,6 @@ class DbSeederCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__ . '/stubs/seeder.stub';
+        return __DIR__ . '/../stubs/database/seed/seeder.stub';
     }
 }
