@@ -17,14 +17,18 @@
     }
   ],
   "require": {
-    "php": ">=7.0"
+    "php" : ">=7.0",
+    "illuminate/auth": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+    "illuminate/container": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+    "illuminate/contracts": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+    "illuminate/database": "~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0"
   },
   "autoload": {
     "psr-4": {
-      "Vrkansagara\\LaraOutPress\\": "src/"
+      "CommercePunditTech\\LaravelSeeding\\": "src"
     },
     "files": [
-      "src/helper.php"
+      "src/helpers.php"
     ]
   },
   "support": {
@@ -32,25 +36,29 @@
     "issues": "https://github.com/commercepundittech/laravel-seeding/issues",
     "source": "https://github.com/commercepundittech/laravel-seeding"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
   "extra": {
     "laravel": {
       "branch-alias": {
-        "dev-master": "develop"
+        "dev-master": "development"
       },
       "providers": [
-        "Vrkansagara\\LaraOutPress\\ServiceProvider"
+        "CommercePunditTech\\LaravelSeedingServiceProvider"
       ],
       "aliases": {
-        "LaraOutPress": "Vrkansagara\\LaraOutPress\\Facade"
+        "LaravelSeeding": "CommercePunditTech\\LaravelSeeding\\Facades"
       }
     }
   },
   "require-dev": {
-    "laravel/framework": "5.5.x"
+    "laravel/framework": "~5.5"
   },
   "scripts": {
+    "test": "phpunit",
     "post-autoload-dump": [
       "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
     ]
