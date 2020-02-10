@@ -13,11 +13,22 @@
     {
       "name": "Vallabh Kansagara",
       "email": "vallabh.kansagara@commercepundit.com",
-      "homepage": "https://vrkansagara.in/"
+      "homepage": "https://vrkansagara.in/",
+      "role": "maintainer"
+    },
+    {
+      "name": "Sujit Girgilani",
+      "email": "sujit@commercepundit.com ",
+      "role": "maintainer"
+    },
+    {
+      "name": "Dipu Patel",
+      "email": "dipu.patel@commercepundit.com ",
+      "role": "developer"
     }
   ],
   "require": {
-    "php" : ">=7.0"
+    "php": ">=7.0"
   },
   "autoload": {
     "psr-4": {
