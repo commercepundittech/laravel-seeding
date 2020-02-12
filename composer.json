@@ -54,7 +54,7 @@
         "dev-master": "development"
       },
       "providers": [
-        "CommercePunditTech\\LaravelSeedingServiceProvider"
+        "CommercePunditTech\\LaravelSeeding\\LaravelSeedingServiceProvider"
       ],
       "aliases": {
         "LaravelSeeding": "CommercePunditTech\\LaravelSeeding\\Facades"
