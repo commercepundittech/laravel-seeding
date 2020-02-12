@@ -4,7 +4,7 @@ This is simply laravel seeding module for database.
 ### How to install
 
 ~~~bash
-composer require composer require commercepundittech/laravel-seeding
+composer require commercepundittech/laravel-seeding
 ~~~
 
 ### How to activate this module in Laravel application
